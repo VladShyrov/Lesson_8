@@ -1,0 +1,394 @@
+/* Подключение шрифтов */
+@import url("https://fonts.googleapis.com/css?family=Lato:regular,700");
+@import url("https://fonts.googleapis.com/css?family=Lora:regular,700");
+
+@font-face {
+  font-family: "Acrom";
+  src: url("../fonts/Acrom-Thin.woff2") format("woff2"),
+    url("../fonts/Acrom-Thin.woff") format("woff");
+  font-weight: 100;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Futura PT";
+  src: url("../fonts/FuturaPT-Light.woff2") format("woff2"),
+    url("../fonts/FuturaPT-Light.woff") format("woff");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+/* Стили обнуления */
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+li {
+  list-style: none;
+}
+a,
+a:visited {
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: none;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: inherit;
+  font-size: inherit;
+}
+/* рахмер для картинок */
+img {
+  max-width: 100%;
+}
+body {
+  min-width: 100%;
+  background-color: grey;
+}
+/* Навигация */
+.header {
+  display: block;
+  width: 100%;
+  background: url(../img/william-christen-lf-vQPP0fY4-unsplash.jpg) 00 / cover
+    fixed;
+  height: 700px;
+}
+.button {
+  color: white;
+  text-shadow: 2px 3px 2px teal;
+  background-color: yellowgreen;
+  padding: 15px;
+}
+li {
+  display: inline;
+  font-family: lato;
+  font-size: 15px;
+  float: right;
+  text-transform: uppercase;
+  margin: 30px 5px 0px 0px;
+}
+.nav__logo {
+  width: 100%;
+  margin: 300px 0px -5px 0px;
+  display: inline-block;
+  position: absolute;
+  font-family: lato;
+  font-size: 90px;
+  text-align: center;
+  text-transform: uppercase;
+  opacity: 0.8;
+  text-shadow: 5px 5px 5px green;
+  color: rgba(128, 128, 128, 0.445);
+}
+.button:hover {
+  color: black;
+  text-shadow: 5px 3px 2px chocolate;
+  background-color: yellow;
+  box-shadow: 8px 5px 5px green;
+}
+.nav__logo:hover {
+  color: yellowgreen;
+  text-shadow: 5px 5px 5px black;
+  background-color: rgba(255, 255, 255, 0.171);
+  opacity: 1;
+}
+/* Граница тела */
+.body_content {
+  font-size: 0px;
+  display: block;
+  width: 100%;
+  height: 800px;
+  background: url(../img/josiah-gardner-ZytVK5wm1K8-unsplash.jpg) 0 0 / cover
+    no-repeat;
+}
+.title {
+  width: 100%;
+  margin: 400px 0px -10px 0px;
+  display: inline-block;
+  position: absolute;
+  font-family: lato;
+  font-size: 70px;
+  text-align: center;
+  text-transform: uppercase;
+  opacity: 0.8;
+  text-shadow: 5px 5px 5px green;
+  color: rgba(128, 128, 128, 0.445);
+  border: 1px solid black;
+}
+.title:hover {
+  color: #fff;
+  background-color: rgba(99, 98, 96, 0.432);
+}
+.content {
+  position: relative;
+  margin: -40px 0px 0px 60px;
+  display: inline-block;
+  width: 300px;
+  height: 300px;
+  font-family: Acrom;
+  font-size: 20px;
+  font-weight: bolder;
+  text-align: left;
+  padding: 10px 10px 80px 10px;
+  vertical-align: bottom;
+  border: 2px solid black;
+  box-sizing: border-box;
+  background: grey;
+  box-shadow: 5px 50px 50px 30px rgb(11, 161, 31);
+  color: rgb(55, 56, 56);
+  align-content: center;
+  overflow: auto;
+}
+.content:hover {
+  color: #fff;
+}
+.content::first-letter {
+  font-size: 1.5em;
+  background-color: #000;
+  color: #fff;
+  margin-right: 0.2em;
+  padding: 0 0.2em 0.1em 0.2em;
+  border-radius: 0.1em;
+}
+.content__nature {
+  font-size: 0px;
+  display: block;
+  width: 100%;
+  height: 800px;
+  background: url(../img/luca-bravo-oV4bR3YoR_s-unsplash.jpg) top / cover
+    no-repeat;
+}
+.content_l {
+  position: relative;
+  margin: -40px 0px 0px 60px;
+  display: inline-block;
+  width: 300px;
+  height: 300px;
+  font-family: Acrom;
+  font-size: 28px;
+  font-weight: bolder;
+  text-align: center;
+  text-transform: uppercase;
+  padding: 130px 10px 10px 10px;
+  vertical-align: bottom;
+  border: 2px solid black;
+  border-radius: 50%;
+  box-sizing: border-box;
+  background: grey;
+  box-shadow: 5px 50px 50px 30px rgb(11, 161, 31);
+  color: #fff;
+  align-content: center;
+}
+.content_l:hover {
+  background: url(../img/fereshteh-azadi-Fkc2KrT_5cA-unsplash.jpg) 0 0 / cover
+    no-repeat;
+}
+.content_f {
+  position: relative;
+  margin: -40px 0px 0px 60px;
+  display: inline-block;
+  width: 300px;
+  height: 300px;
+  font-family: Acrom;
+  font-size: 28px;
+  font-weight: bolder;
+  text-align: center;
+  text-transform: uppercase;
+  padding: 130px 10px 10px 10px;
+  vertical-align: bottom;
+  border: 2px solid black;
+  border-radius: 50%;
+  box-sizing: border-box;
+  background: grey;
+  box-shadow: 5px 50px 50px 30px rgb(11, 161, 31);
+  color: #fff;
+  align-content: center;
+}
+.content_f:hover {
+  background: url(../img/forest.jpg) 0 0 / cover no-repeat;
+}
+.content_t {
+  position: relative;
+  margin: -40px 0px 0px 60px;
+  display: inline-block;
+  width: 300px;
+  height: 300px;
+  font-family: Acrom;
+  font-size: 28px;
+  font-weight: bolder;
+  text-align: center;
+  text-transform: uppercase;
+  padding: 130px 10px 10px 10px;
+  vertical-align: bottom;
+  border: 2px solid black;
+  border-radius: 50%;
+  box-sizing: border-box;
+  background: grey;
+  box-shadow: 5px 50px 50px 30px rgb(11, 161, 31);
+  color: #fff;
+  align-content: center;
+}
+.content_t:hover {
+  background: url(../img/Tourism.jpg) 0 0/320px 320px no-repeat;
+}
+.content_a {
+  position: relative;
+  margin: -40px 0px 0px 60px;
+  display: inline-block;
+  width: 300px;
+  height: 300px;
+  font-family: Acrom;
+  font-size: 28px;
+  font-weight: bolder;
+  text-align: center;
+  text-transform: uppercase;
+  padding: 130px 10px 10px 10px;
+  vertical-align: bottom;
+  border: 2px solid black;
+  border-radius: 50%;
+  box-sizing: border-box;
+  background: grey;
+  box-shadow: 5px 50px 50px 30px rgb(11, 161, 31);
+  color: #fff;
+  align-content: center;
+}
+.content_a:hover {
+  background: url(../img/adventure.jpg) 0 0/300px 300px no-repeat;
+}
+p {
+  margin: 40px;
+}
+.lake_text {
+  font-family: lato;
+  font-size: 20px;
+  color: #fff;
+  margin-top: 80px;
+}
+.lake_text::before {
+  content: "lake";
+  margin: 40px;
+  text-transform: uppercase;
+  font-family: lato;
+  font-size: 28px;
+  text-decoration: underline;
+}
+.forest_text {
+  font-family: lato;
+  font-size: 20px;
+  color: rgb(15, 209, 25);
+  margin-top: 10px;
+}
+.forest_text::before {
+  content: "forest";
+  margin: 40px;
+  text-transform: uppercase;
+  font-family: lato;
+  font-size: 28px;
+  text-decoration: underline;
+}
+.tuorism_text {
+  font-family: lato;
+  font-size: 20px;
+  color: rgb(141, 209, 15);
+  margin-top: 10px;
+}
+.tuorism_text::before {
+  content: "tuorism";
+  margin: 40px;
+  text-transform: uppercase;
+  font-family: lato;
+  font-size: 28px;
+  text-decoration: underline;
+}
+.adventure_text {
+  font-family: lato;
+  font-size: 20px;
+  color: rgb(77, 5, 59);
+  margin-top: 10px;
+}
+.adventure_text::before {
+  content: "adventure";
+  margin: 60px;
+  text-transform: uppercase;
+  font-family: lato;
+  font-size: 28px;
+  text-decoration: underline;
+}
+.lake_text *:first-child {
+  background-color: rgba(197, 29, 29, 0.445);
+}
+.forest_text p:nth-child(odd) {
+  background-color: rgb(248, 3, 3);
+  color: #fff;
+}
+.tuorism_text::after {
+  content: "V.Shyrov/14.02.21";
+  text-transform: uppercase;
+  text-decoration: underline;
+  font-size: 10px;
+  font-family: lato;
+  color: rgba(0, 0, 0, 0.452);
+  margin-right: 40px;
+  float: right;
+}
+.footer {
+  display: block;
+  max-width: 100%;
+  margin: 30px 0px 0px 0px;
+  font-family: Acrom;
+  font-weight: bolder;
+  font-size: 20px;
+  text-transform: uppercase;
+  padding: 60px;
+  border: 2px solid #000000;
+  color: #fff;
+  text-shadow: 1px 1px 1px #ff0000;
+  background: url(../img/josiah-gardner-ZytVK5wm1K8-unsplash.jpg) 00 / cover
+    no-repeat;
+}
+.footer:hover {
+  color: #fff;
+  background: #000;
+}
+.button_up {
+  text-decoration: none;
+  display: inline-block;
+  width: 140px;
+  height: 45px;
+  line-height: 45px;
+
+  margin: 40px 0px 0px 40px;
+  font-family: Acrom;
+  font-size: 15px;
+  text-transform: uppercase;
+  text-align: center;
+  letter-spacing: 3px;
+  font-weight: bolder;
+  color: #ffffff;
+  background: linear-gradient(to right, #b4e391 0%, #61c419 50%, #b4e391 100%);
+  transition: 0.3s;
+}
+.floating-button:hover {
+  padding: 10px;
+
+  background: #454747;
+  box-shadow: 0 15px 20px rgba(46, 229, 157, 0.4);
+  color: white;
+  transform: translateY(-7px);
+}
+p:hover {
+  background: url(../img/2.jpg) 0 0 / cover no-repeat fixed;
+  color: #fff;
+  height: 1100px;
+}
